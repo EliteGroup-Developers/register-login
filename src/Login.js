@@ -6,7 +6,7 @@ import{useRef,useState,useEffect} from 'react'
 const Login = () => {
 
     const userRef=useRef();
-    const errRer=useRef();
+    const errRef=useRef();
 
     const [user,setUser]=useState('');
     const [pwd,setPwd]=useState('');
@@ -26,9 +26,16 @@ const Login = () => {
     },[user,pwd]);
 
   return (
-    <div>
+    <section>
+      <p ref={errRef} className={errMsg ? "errmsg":"offscreen"} aria-live="assertive">{errMsg}</p>
+
+      <h1>Sign in</h1>
+      <form>
+        <label htmlFor='username'>Username:</label>
+        
+      </form>
       
-    </div>
+    </section>
   )
 }
 

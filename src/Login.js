@@ -58,6 +58,12 @@ try{
 
 
 }catch(err){
+  if(!err?.message){
+    setErrMsg('No Server Response');
+
+  }else if(err.response?.status===400){
+    setErrMsg('Missing UserName and password');
+  }
 
 }
 

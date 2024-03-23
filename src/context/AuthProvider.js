@@ -17,4 +17,4 @@ export const AuthProvider=({
     )
 }
 
-export  default AuthContext
+export  default AuthContext;

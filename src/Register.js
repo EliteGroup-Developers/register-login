@@ -30,6 +30,8 @@ const Register = () => {
         userRef.current.focus();
     }, [])
 
+
+    
     useEffect(() => {
         setValidName(USER_REGEX.test(user));
     }, [user])
@@ -129,6 +131,7 @@ const Register = () => {
                         <input
                             type="password"
                             id="password"
+
                             onChange={(e) => setPwd(e.target.value)}
                             value={pwd}
                             required

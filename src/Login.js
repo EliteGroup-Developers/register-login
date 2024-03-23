@@ -11,7 +11,7 @@ const LOGIN_URL='/auth';
 
 const Login = () => {
 
-  const{setAuth}=useContext(AuthContext)
+  const{ setAuth }=useContext(AuthContext)
 
     const userRef=useRef();
     const errRef=useRef();
@@ -50,8 +50,12 @@ try{
   },
 
   });
+
   console.log(JSON.stringify(response?.data));
-  console.log(JSON.stringify(response));
+  // console.log(JSON.stringify(response));
+  const accessToken=response?.data?.accessToken;
+  const roles=response?.data?.roles
+  setAuth({user,pwd,roles,accessToken})
   setUser('');
   setPwd("");
   setSuccess(true);
@@ -63,7 +67,14 @@ try{
 
   }else if(err.response?.status===400){
     setErrMsg('Missing UserName and password');
+  }else if(err.response?.status===401){
+    setErrMsg('Unauthorized');
+  }else{
+    setErrMsg('Login Failed');
+
+
   }
+  errRef.current.focus();
 
 }
 
@@ -85,7 +96,7 @@ try{
         <h1>You are logged in</h1>
         <br/>
         <p>
-          <a href="github.com">Go to home</a>
+          <a href="#">Go to home</a>
         </p>
       </section>
     ):(

@@ -8,6 +8,8 @@ import axios from './api/axios';
 
 const LOGIN_URL='/auth';
 
+import MainPage from './MainPage'
+
 
 const Login = () => {
 
@@ -93,11 +95,7 @@ try{
 
     {success?(
       <section>
-        <h1>You are logged in</h1>
-        <br/>
-        <p>
-          <a href="#">Go to home</a>
-        </p>
+        <MainPage/>
       </section>
     ):(
     
@@ -107,7 +105,7 @@ try{
 
       <h1>Sign in</h1>
       <form onSubmit={handleSubmit}>
-        <label htmlFor='username'>Username:</label>
+        <label className='color' htmlFor='username'>Username:</label>
         <input
         type="text"
         id="username"
@@ -118,7 +116,7 @@ try{
         required
         
         />
-        <label htmlFor='username'>Password:</label>
+        <label className='color' htmlFor='username'>Password:</label>
         <input
         type="password"
         id="password"
@@ -128,7 +126,7 @@ try{
         required
         
         />
-        <button>Sign In</button>
+        <button className='button'>Sign In</button>
 
       </form>
       <p>

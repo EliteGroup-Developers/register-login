@@ -1,5 +1,5 @@
 import Register from './Register';
-import Login from './Login'
+// import Login from './Login'
 import MainPage from './MainPage'
 
 function App() {

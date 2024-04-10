@@ -12,7 +12,7 @@
 html {
     font-family: 'Nunito', sans-serif;
     font-size: 22px;
-    color: #fff;
+    color: #4e3e3e;
 }
 
 body {
@@ -118,9 +118,9 @@ button {
 .line {
     display: inline-block;
 }
-.color{
-    color: #DBFDC8;
-}
+/* .color{
+    color: #0000;
+} */
 .button{
     background-color: #0D1F23;
     color:#DBFDC8;

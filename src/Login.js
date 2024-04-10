@@ -8,7 +8,7 @@ import axios from './api/axios';
 
 const LOGIN_URL='/auth';
 
-import MainPage from './MainPage'
+// import MainPage from './MainPage'
 
 
 const Login = () => {
@@ -95,7 +95,7 @@ try{
 
     {success?(
       <section>
-        <MainPage/>
+        {/* <MainPage/> */}
       </section>
     ):(
     
@@ -116,7 +116,7 @@ try{
         required
         
         />
-        <label className='color' htmlFor='username'>Password:</label>
+        <label className='color ' htmlFor='username'>Password:</label>
         <input
         type="password"
         id="password"

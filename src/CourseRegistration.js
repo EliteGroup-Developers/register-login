@@ -5,14 +5,15 @@ import "./courseRegistration.css";
 const CourseRegistration = () => {
   return (
     <>
+
+
      
       <div className="center">
         <div className="registrationForm">
-          <h1>Student Course Registration</h1>
-          <hr></hr>
+          <h1 className='text-[#DBFDC8]'>Student Course Registration</h1>
           <form action="" className=".form">
             <label htmlFor="studentDetails">Student's Details</label>
-            <div className="detailsContainer">
+            <div className="detailsContainer justify-between items-center">
               <input placeholder="Surname" type="text" />
               <input placeholder="First name" type="text" />
               <input placeholder="Other name" type="text" />
@@ -43,9 +44,9 @@ const CourseRegistration = () => {
               <input placeholder="course" type="text" />
             </div>
 
-            <h2>Electives</h2>
+            <h2 className='text-[#ADECCF]'>Electives</h2>
             <p>
-              Elective 1<input type="radio" />
+              Elective 1<input  type="radio" />
             </p>
 
             <p>

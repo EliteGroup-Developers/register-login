@@ -1,0 +1,94 @@
+form{
+    margin-bottom: 50px;
+}
+
+.registrationForm{
+    width: 100%;
+    max-width: 1200px;
+    background-color: white;
+    height: 100vh;
+    overflow-y: scroll;
+    margin-bottom: 5%;
+    padding: 2%;
+    color: #0D1F23;
+    
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.registrationForm h1 {
+    color: #0D1F23;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2rem;
+}
+
+.registrationForm h2 {
+    color: #0D1F23;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+
+
+.registrationForm label {
+    color: #0D1F23;
+}
+
+.detailsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+  
+
+}
+.courseContainer {
+    
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+  
+
+}
+
+.registrationForm input {
+  
+  flex-basis: calc(33.33% - 10px); /* Each input takes up one-third of the container width with some margin */
+  margin: 5px;
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  border: 1px solid #0D1F23;
+}
+
+.registrationForm button{
+    border: 1px solid #0D1F23;
+    color: #0D1F23;
+}
+.registrationForm button:hover{
+    border: 2px solid #fff;
+    background-color: #0D1F23;
+    color: #fff;
+}
+  
+
+
+
+
+
+
+@media (max-width: 900px) {
+    .nameContainer, .courseContainer {
+      flex-direction: column;
+    }
+
+    .registrationForm h1 {
+        font-size: 1.5rem;
+    }
+  }

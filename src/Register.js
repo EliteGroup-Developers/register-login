@@ -103,7 +103,7 @@ const Register = () => {
           </p>
           <h1 className="color">Register</h1>
           <form onSubmit={handleSubmit}>
-            <div className="  flex flex-1 justify-between flex-wrap items-center ">
+            <div className="  flex flex-1 justify-between flex-wrap items-center  ">
               <div className="mb-10">
                     <label className="color block" htmlFor="username">
                     </label>

@@ -76,7 +76,7 @@ button {
 }
 
 .line {
-    display: inline-block;
+    /* display: inline-block; */
 }
 /* .color{
     color: #0000;

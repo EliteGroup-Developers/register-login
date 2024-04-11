@@ -1,9 +1,12 @@
 import React from 'react'
+import Nav from './Home/Nav'
+import Hero from './Home/Hero'
 
 const MainPage = () => {
   return (
     <div>
-      <h1></h1>
+      <Nav/>
+      <Hero/>
       
     </div>
   )

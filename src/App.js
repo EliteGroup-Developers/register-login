@@ -1,3 +1,4 @@
+import {BrowserRouter,Routes,Route} from 'react-router-dom'
 import Register from './Register';
 // import Login from './Login'
 import MainPage from './MainPage'
@@ -12,15 +13,12 @@ function App() {
 
   return (
     <main className="App mt-0">
-      <Nav/>
-      <Hero/>
-
-
-      {/* <Register/> */}
-      
-      {/* <Login/> */}
-      {/* <CourseRegistration /> */}
-      {/* <MainPage/> */}
+      <Routes>
+<Route index element={<MainPage/>}
+<Route index element={<MainPage/>}
+      </Routes>
+      <BrowserRouter>
+      </BrowserRouter>
     </main>
   );
 }

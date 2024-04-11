@@ -1,3 +1,4 @@
+import {Link} from 'react-router-dom'
 import { useRef, useState, useEffect } from "react";
 import {
   faCheck,
@@ -395,7 +396,7 @@ console.log(semester);
             <br />
             <span className="line">
               {/*put router link here*/}
-              <a href="#">Sign In</a>
+            <Link to='/login'><a href="#">Sign In</a></Link>  
             </span>
           </p>
         </section>

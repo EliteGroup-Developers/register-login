@@ -19,8 +19,10 @@ const Login = () => {
     const userRef=useRef();
     const errRef=useRef();
 
-    const [user,setUser]=useState('');
+    const [email,setEmail]=useState('');
+    console.log(email);
     const [pwd,setPwd]=useState('');
+    console.log(pwd);
     const [errMsg,setErrMsg]=useState('');
     const [success,setSuccess]=useState(false);
     console.log(pwd);
@@ -36,7 +38,7 @@ const Login = () => {
         setErrMsg('');
 
 
-    },[user,pwd])
+    },[email,pwd])
 
 
 
@@ -46,7 +48,7 @@ const Login = () => {
         e.preventDefault();
 
 try{
-  const response=await axios.post(LOGIN_URL,JSON.stringify({user:user,pwd:pwd}),{
+  const response=await axios.post(LOGIN_URL,JSON.stringify({email:email,pwd:pwd}),{
     headers: {'Content-Type': 'application/json',
     withCredentials: true
   
@@ -58,8 +60,8 @@ try{
   // console.log(JSON.stringify(response));
   const accessToken=response?.data?.accessToken;
   const roles=response?.data?.roles
-  setAuth({user,pwd,roles,accessToken})
-  setUser('');
+  setAuth({email,pwd,roles,accessToken})
+  setEmail('');
   setPwd("");
   setSuccess(true);
 
@@ -106,15 +108,16 @@ try{
 
       <h1>Sign in</h1>
       <form onSubmit={handleSubmit}>
-        <label className='color' htmlFor='username'>Username:</label>
+        <label className='color' htmlFor='username'>email:</label>
         <input
         type="text"
         id="username"
         ref={userRef}
         autoComplete="off"
-        onChange={(e)=>setUser(e.target.value)}
-        value={user}
+        onChange={(e)=>setEmail(e.target.value)}
+        value={email}
         required
+        placeholder='youremail@gmail.com'
         
         />
         <label className='color ' htmlFor='username'>Password:</label>

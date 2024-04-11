@@ -1,6 +1,6 @@
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
 import Register from './Register';
-// import Login from './Login'
+import Login from './Login'
 import MainPage from './MainPage'
 import CourseRegistration from './CourseRegistration';
 
@@ -13,11 +13,22 @@ function App() {
 
   return (
     <main className="App mt-0">
-      <Routes>
-<Route index element={<MainPage/>}
-<Route index element={<MainPage/>}
-      </Routes>
       <BrowserRouter>
+      <Routes>
+
+        <Route index element={<MainPage/>}/>
+        <Route path='/home' element={<MainPage/>}/>
+        <Route path='/register' element={<Register/>}/>
+        <Route path='/login' element={<Login/>}/>
+      {/* <Nav/>
+      <Hero/> */}
+      {/* <Register/> */}
+      {/* <Login/> */}
+      {/* <CourseRegistration/> */}
+
+      </Routes>
+      
+      
       </BrowserRouter>
     </main>
   );

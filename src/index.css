@@ -31,3 +31,13 @@ body {
 }
 
 
+.image{
+	aspect-ratio: auto 208 / 48;
+	box-sizing: border-box;
+	max-width: 100%;
+	overflow: clip;
+	vertical-align: middle;
+}
+
+
+

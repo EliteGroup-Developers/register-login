@@ -43,11 +43,19 @@ form{
 }
 
 .registrationForm h2 {
-    color: #0D1F23;
+    color:#DBFDC8
+    ;
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 1.5rem;
+
+
+    /* #DBFDC8
+#ADECCF
+#0D1F23
+#E5E7EB
+#D6B9FC */
 }
 
 
@@ -79,7 +87,7 @@ form{
   flex-basis: calc(33.33% - 10px); /* Each input takes up one-third of the container width with some margin */
   margin: 5px;
   box-sizing: border-box; /* Include padding and border in the element's total width and height */
-  border: 6px solid #ADECCF;
+  border: 3px solid #ADECCF;
 }
 
 .registrationForm button{

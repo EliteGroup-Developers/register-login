@@ -1,10 +1,13 @@
 import React from "react";
 // import Nav from "./Nav";
 import "./courseRegistration.css";
+import Nav from './Home/Nav'
 
 const CourseRegistration = () => {
   return (
     <>
+    <Nav/>
+
 
 
      
@@ -44,12 +47,12 @@ const CourseRegistration = () => {
               <input placeholder="course" type="text" />
             </div>
 
-            <h2 className='text-[#ADECCF]'>Electives</h2>
-            <p>
+            <h2 className='text-[#fdfdfd]'>Electives</h2>
+            <p  className="text-[#ADECCF]">
               Elective 1<input  type="radio" />
             </p>
 
-            <p>
+            <p className="text-[#ADECCF]">
               Elective 2<input type="radio" />
             </p>
 

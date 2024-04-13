@@ -105,10 +105,10 @@ try{
     
     <section>
       <p ref={errRef} className={errMsg ? "errmsg":"offscreen"} aria-live="assertive">{errMsg}</p>
-
+<h1 className='text-2xl text-center m†-10  sm:text-4xl'>Login</h1>
       <h1>Sign in</h1>
       <form onSubmit={handleSubmit}>
-        <label className='color' htmlFor='username'>email:</label>
+        <label className='color text-[#ADECCF]' htmlFor='username'>email:</label>
         <input
         type="text"
         id="username"
@@ -118,9 +118,10 @@ try{
         value={email}
         required
         placeholder='youremail@gmail.com'
+        className='sm:w-[40rem] '
         
         />
-        <label className='color ' htmlFor='username'>Password:</label>
+        <label className='color  text-[#ADECCF]' htmlFor='username'>Password:</label>
         <input
         type="password"
         id="password"

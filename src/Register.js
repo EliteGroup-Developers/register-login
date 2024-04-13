@@ -1,5 +1,6 @@
 import {Link} from 'react-router-dom'
 import { useRef, useState, useEffect } from "react";
+import  Nav from './Home/Nav'
 import {
   faCheck,
   faTimes,
@@ -138,7 +139,10 @@ console.log(semester);
       {success ? (
         <Login />
       ) : (
-        <section>
+        
+        <section className='mih-h-screen min-w-screen'>
+              {/* <Nav/> */}
+
           <p
             ref={errRef}
             className={errMsg ? "errmsg" : "offscreen"}
@@ -157,7 +161,7 @@ console.log(semester);
                     id="username"
                     ref={userRef}
                     autoComplete="off"
-                    onChange={(e) => setSurname(e.target.value)}
+                    onChange={(e) => console.log(e)}
                     value={surname}
                     required
                     // aria-invalid={validName ? "false" : "true"}
@@ -385,7 +389,7 @@ console.log(semester);
               </div>
             </div>
             <button
-              className="button  w-full max-lg:w-[10rem] max-lg:flex max-lg:justify-center max-lg:items-center max-lg:ml-[6rem]"
+              className="button  flex justify-center items-center ml-96 w-[20rem] max-lg:w-[10rem] max-lg:flex max-lg:justify-center max-lg:items-center max-lg:ml-[6rem] "
               disabled={!validName || !validPwd || !validMatch ? true : false}
             >
               Sign Up
